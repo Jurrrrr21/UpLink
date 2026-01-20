@@ -79,22 +79,23 @@ export function Hero() {
                 </div>
 
                 {/* Social proof numbers - enhanced with cards */}
-                <div className="mx-auto max-w-4xl mt-20 lg:mt-24">
-                    <div className="grid grid-cols-3 gap-6 lg:gap-8">
-                        <div className="text-center bg-white/50 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-                            <p className="text-4xl lg:text-5xl font-bold bg-gradient-to-br from-primary-600 to-primary-700 bg-clip-text text-transparent">10-15</p>
-                            <p className="mt-2 text-sm font-medium text-gray-600">Meetings/month</p>
+                <div className="mx-auto max-w-4xl mt-12 sm:mt-16 lg:mt-24">
+                    <div className="grid grid-cols-3 gap-3 sm:gap-6 lg:gap-8">
+                        <div className="text-center bg-white/50 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 lg:p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                            <p className="text-2xl sm:text-3xl lg:text-5xl font-bold bg-gradient-to-br from-primary-600 to-primary-700 bg-clip-text text-transparent">10-15</p>
+                            <p className="mt-1 sm:mt-2 text-xs sm:text-sm font-medium text-gray-600">Meetings/month</p>
                         </div>
-                        <div className="text-center bg-white/50 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-                            <p className="text-4xl lg:text-5xl font-bold bg-gradient-to-br from-primary-600 to-primary-700 bg-clip-text text-transparent">3-5</p>
-                            <p className="mt-2 text-sm font-medium text-gray-600">Days to start</p>
+                        <div className="text-center bg-white/50 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 lg:p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                            <p className="text-2xl sm:text-3xl lg:text-5xl font-bold bg-gradient-to-br from-primary-600 to-primary-700 bg-clip-text text-transparent">3-5</p>
+                            <p className="mt-1 sm:mt-2 text-xs sm:text-sm font-medium text-gray-600">Days to start</p>
                         </div>
-                        <div className="text-center bg-white/50 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-                            <p className="text-4xl lg:text-5xl font-bold bg-gradient-to-br from-primary-600 to-primary-700 bg-clip-text text-transparent">$5k+</p>
-                            <p className="mt-2 text-sm font-medium text-gray-600">Avg deal size</p>
+                        <div className="text-center bg-white/50 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 lg:p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                            <p className="text-2xl sm:text-3xl lg:text-5xl font-bold bg-gradient-to-br from-primary-600 to-primary-700 bg-clip-text text-transparent">$5k+</p>
+                            <p className="mt-1 sm:mt-2 text-xs sm:text-sm font-medium text-gray-600">Avg deal size</p>
                         </div>
                     </div>
                 </div>
+
 
                 {/* Bottom text - enhanced */}
                 <div className="mx-auto mt-12 max-w-2xl text-center"> 
