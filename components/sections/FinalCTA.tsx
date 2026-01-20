@@ -1,13 +1,8 @@
-'use client';
-
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Cross } from 'lucide-react';
 
 export function FinalCTA() {
-    const handleClick = () => {
-        window.open('https://calendly.com/romel-uplnk/strategy-call', '_blank');
-        /* replace with window.open('CALENDLYLINK', '_blank') */
-    };
+    const CALENDLY_URL = "https://calendly.com/romel-uplnk/strategy-call";
     return (
         <section id="contact" className="py-12 sm:py-16 bg-gradient-to-b from-white to-primary-50">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -24,12 +19,14 @@ export function FinalCTA() {
                     </p>
                     <div className="mt-10 flex flex-col items-center gap-4">
                         <Button 
+                            asChild
                             size="lg" 
                             className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-6 text-lg group"
-                            onClick={handleClick}
                         >
-                            Book a free strategy call
-                            <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                            <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+                                Book a free strategy call
+                                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                             </a>
                         </Button>
                         <p className="text-sm text-gray-500">If it's not a fit, we'll tell you.</p>
                     </div>

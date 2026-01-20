@@ -1,13 +1,8 @@
-'use client';
-
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Sparkles } from 'lucide-react';
 
 export function Hero() {
-    const handleClick = () => {
-        window.open('https://calendly.com/romel-uplnk/strategy-call', '_blank');
-        /* replace with window.open('CALENDLYLINK', '_blank') */
-    };
+    const CALENDLY_URL = "https://calendly.com/romel-uplnk/strategy-call"
 
     return (
         <section className="relative overflow-hidden bg-gradient-to-b from-primary-50 via-white to-white pb-12 sm:pb-16">
@@ -63,12 +58,15 @@ export function Hero() {
                         {/* CTA with enhanced styling */}
                         <div className="flex flex-col items-start gap-3 pt-4">
                             <Button 
+                                asChild
                                 size="lg" 
                                 className="bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white px-12 py-7 text-lg font-semibold shadow-2xl shadow-primary-500/25 hover:shadow-2xl hover:shadow-primary-600/40 transition-all duration-300 hover:scale-105 group rounded-xl"
-                                onClick={handleClick}
+                                
                             >
-                                Book a free strategy call
-                                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                                <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+                                    Book a free strategy call
+                                    <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                                </a>
                             </Button>
                             <p className="text-sm text-gray-500 font-medium flex items-center gap-2">
                                 <span className="inline-block w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
